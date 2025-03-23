@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useState } from "react"
-import { submitContactForm } from "../actions"
+import { submitContactForm } from "../../app/actions"
 
 export default function ContactForm() {
   const [pending, setPending] = useState(false)
