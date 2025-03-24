@@ -96,7 +96,7 @@ export default function Page() {
                 About Me
               </h2>
               <p>
-                Hi, I'm David Cui. My passions lie at the intersection between Science and Art. 
+              Hi, I&apos;m David Cui. My passions lie at the intersection between Science and Art. 
                 I have been programming since 2022 and have experience in Full-stack development, ML Operations, and basic robotics.
               </p>
               <p>
