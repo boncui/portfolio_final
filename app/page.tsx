@@ -26,7 +26,7 @@ export default function Page() {
             <Link href="#contact" className="transition hover:text-yellow-400 hover:drop-shadow-[0_0_10px_rgba(250,204,21,0.7)]">Contact</Link>
           </nav>
           <Button variant="outline" className="transition hover:text-yellow-400 hover:drop-shadow-[0_0_10px_rgba(250,204,21,0.7)]">
-            <a href="/resume.pdf" download="DavidCui_resume.pdf">Resume</a>
+            <a href="/Resume.pdf" download="DavidCui_resume.pdf">Resume</a>
           </Button>
         </div>
       </header>
