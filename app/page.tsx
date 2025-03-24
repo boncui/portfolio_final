@@ -4,6 +4,7 @@ import Link from "next/link"
 import ContactForm from "@/components/custom/contact-form";
 import ProjectCard from "@/components/custom/project-card";
 import TechStack from "@/components/custom/tech-stack";
+import ThreeDModel from "@/components/custom/3dmodel";
 
 
 export default function Page() {
@@ -38,7 +39,7 @@ export default function Page() {
 
       <div className="bg-background">
         {/* 3D Model Background */}
-        {/* <ThreeDModelWrapper /> */}
+        <ThreeDModel />
 
         {/* Landing */}
         
