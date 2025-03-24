@@ -1,15 +1,34 @@
 "use client"
 
-import { Canvas } from "@react-three/fiber"
+import { Canvas, useFrame } from "@react-three/fiber"
 import { Suspense, useRef } from "react"
 import { useGLTF, OrbitControls } from "@react-three/drei"
-import { Group } from "three"
+import { Group, Mesh, MeshStandardMaterial } from "three"
 
 function Model() {
   const { scene } = useGLTF("/landing/model.glb")
-  const ref = useRef<Group>(null)
+  const modelRef = useRef<Group>(null)
 
-  return <primitive ref={ref} object={scene} scale={2} position={[4, 2, -3]} />
+  scene.traverse((child) => {
+    if ((child as Mesh).isMesh) {
+      (child as Mesh).material = new MeshStandardMaterial({
+        color: "#2e8464",
+        roughness: 0.7,
+        metalness: 0.3,
+      })
+    }
+  })
+
+   // Add subtle random animation
+  useFrame(() => {
+    if (modelRef.current) {
+      modelRef.current.rotation.y += 0.0005
+      modelRef.current.rotation.x = Math.sin(Date.now() * 0.0002) * 0.2
+      modelRef.current.rotation.z = Math.cos(Date.now() * 0.0001) * 0.15
+    }
+  })
+
+  return <primitive ref={modelRef} object={scene} scale={2} position={[4, 2, -3]} />
 }
 
 export default function ThreeDModel() {

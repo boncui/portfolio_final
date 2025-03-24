@@ -14,10 +14,10 @@ export default function Page() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto flex h-14 items-center px-4 md:px-6">
           <div className="mr-4 hidden md:flex">
-            <Link className="mr-6 flex items-center space-x-2" href="/">
+            <Link className="mr-6 flex items-center space-x-2 text-lg" href="/">
               <span className="hidden font-bold sm:inline-block">Davidcui.dev</span>
             </Link>
-            <nav className="flex items-center space-x-6 text-sm font-medium">
+            <nav className="flex items-center space-x-6 text-med font-medium">
               <Link href="#about" className="transition-colors hover:text-foreground/80">
                 About
               </Link>
@@ -39,7 +39,7 @@ export default function Page() {
 
       <div className="bg-background">
         {/* 3D Model Background */}
-        {/* <ThreeDModel /> */}
+        <ThreeDModel />
 
         {/* Landing */}
         
@@ -112,7 +112,7 @@ export default function Page() {
             {/* Right Side - Image */}
             <div className="flex flex-col items-center">
               <img 
-                src="/images/image3.png" 
+                src="/profile/profilepic.png" 
                 alt="David Cui" 
                 className="w-75 h-75 rounded-lg shadow-lg object-cover"
               />
@@ -129,7 +129,7 @@ export default function Page() {
                 title="StudentSwap"
                 description="A full-stack centralized platform for students to trade sublease contracts built with Typescript, React, and MongoDb."
                 type="Fullstack"
-                image="/projectImgs/studentswap.png"
+                image="/projects/studentswap.png"
                 siteLink="https://student-swap.vercel.app/"
                 link="https://github.com/boncui/StudentSwap"
                 tags={["Typescript", "React", "MongoDB", "Tailwind CSS", "Express", "Node.js"]}
@@ -138,7 +138,7 @@ export default function Page() {
                 title="Melanoma Dectection"
                 description="A real-time task management application with team collaboration features."
                 type="ML"
-                image="/projectImgs/mela.png"
+                image="/projects/melanoma.png"
                 link="https://github.com/boncui/Melanoma-Classification"
                 tags={["Tensorflow", "Keras", "Python"]}
               />
@@ -146,7 +146,7 @@ export default function Page() {
                 title="Dungeons and Dragons game"
                 description="A simple DnD game. Project made on 07/2023"
                 type="Game"
-                image="/projectImgs/dnd.jpg" 
+                image="/projects/dnd.png" 
                 siteLink="https://boncui.pythonanywhere.com"
                 link="https://github.com/boncui/Dungeons_n_dragons_combat"
                 tags={["Python", "Flask"]}
