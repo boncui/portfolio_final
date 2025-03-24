@@ -83,7 +83,12 @@ export default function Page() {
                 <p>Other interests of mine include soccer, rock climbing, financial investing, and chess.</p>
               </div>
               <div className="flex flex-col items-center">
-                <Image src="/profile/profilepic.png" alt="David Cui" width={280} height={280} className="rounded-lg shadow-lg object-cover" />
+                <Image 
+                src="/profile/profile2.png" 
+                alt="David Cui" 
+                width={280} 
+                height={280} 
+                className="rounded-lg shadow-lg object-cover" />
               </div>
             </div>
           </div>
