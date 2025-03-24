@@ -39,7 +39,7 @@ export default function Page() {
 
       <div className="bg-background">
         {/* 3D Model Background */}
-        <ThreeDModel />
+        {/* <ThreeDModel /> */}
 
         {/* Landing */}
         
