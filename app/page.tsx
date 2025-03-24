@@ -8,7 +8,6 @@ import ProjectCard from "@/components/custom/project-card"
 import TechStack from "@/components/custom/tech-stack"
 import ThreeDModel from "@/components/custom/3dmodel"
 import Image from "next/image"
-import { useEffect, useState } from "react"
 
 export default function Page() {
   return (
