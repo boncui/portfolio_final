@@ -8,8 +8,29 @@ import Head from "next/head"
 const inter = Inter({ subsets: ["latin"], display: "swap" }) // Ensures correct font loading
 
 export const metadata: Metadata = {
-  title: "DavidCui.dev - Full Stack Developer",
-  description: "Full stack developer portfolio showcasing projects and skills",
+  title: "DavidCui.dev",
+  icons: {
+    icon: "favicon.ico", // or "/favicon.png"
+  },
+  description: "Engineer | Innovator | Artist",
+  openGraph: {
+    title: "David Cui",
+    description: "Engineer | Innovator | Artist",
+    images: [
+      {
+        url: "apple-touch-icon.png", // can be a better OG image if desired
+        width: 600,
+        height: 600,
+        alt: "David Cui Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "David Cui",
+    description: "Engineer | Innovator | Artist",
+    images: ["apple-touch-icon.png"],
+  },
 }
 
 export default function RootLayout({
