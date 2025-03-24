@@ -5,6 +5,7 @@ import ContactForm from "@/components/custom/contact-form";
 import ProjectCard from "@/components/custom/project-card";
 import TechStack from "@/components/custom/tech-stack";
 import ThreeDModel from "@/components/custom/3dmodel";
+import Image from "next/image"
 
 
 export default function Page() {
@@ -111,11 +112,13 @@ export default function Page() {
 
             {/* Right Side - Image */}
             <div className="flex flex-col items-center">
-              <img 
-                src="/profile/profilepic.png" 
-                alt="David Cui" 
-                className="w-75 h-75 rounded-lg shadow-lg object-cover"
-              />
+            <Image
+              src="/profile/profilepic.png"
+              alt="David Cui"
+              width={300}
+              height={300}
+              className="w-75 h-75 rounded-lg shadow-lg object-cover"
+            />
             </div>
           </div>
         </div>

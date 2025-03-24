@@ -2,7 +2,7 @@
 
 import { Canvas, useFrame } from "@react-three/fiber"
 import { Suspense, useRef } from "react"
-import { useGLTF, OrbitControls } from "@react-three/drei"
+import { useGLTF } from "@react-three/drei"
 import { Group, Mesh, MeshStandardMaterial } from "three"
 
 function Model() {
