@@ -15,21 +15,21 @@ export default function Page() {
         <div className="container mx-auto flex h-14 items-center px-4 md:px-6">
           <div className="mr-4 hidden md:flex">
             <Link className="mr-6 flex items-center space-x-2 text-lg" href="/">
-              <span className="hidden font-bold sm:inline-block">Davidcui.dev</span>
+              <span className="hidden font-bold sm:inline-block hover:text-yellow-400 hover:drop-shadow-[0_0_10px_rgba(250,204,21,0.7)]">Davidcui.dev</span>
             </Link>
             <nav className="flex items-center space-x-6 text-med font-medium">
-              <Link href="#about" className="transition-colors hover:text-foreground/80">
+              <Link href="#about" className="transition hover:text-yellow-400 hover:drop-shadow-[0_0_10px_rgba(250,204,21,0.7)]">
                 About
               </Link>
-              <Link href="#projects" className="transition-colors hover:text-foreground/80">
+              <Link href="#projects" className="transition hover:text-yellow-400 hover:drop-shadow-[0_0_10px_rgba(250,204,21,0.7)]">
                 Projects
               </Link>
-              <Link href="#contact" className="transition-colors hover:text-foreground/80">
+              <Link href="#contact" className="transition hover:text-yellow-400 hover:drop-shadow-[0_0_10px_rgba(250,204,21,0.7)]">
                 Contact
               </Link>
             </nav>
           </div>
-            <Button variant="outline" className="ml-auto">
+            <Button variant="outline" className="ml-auto transition hover:text-yellow-400 hover:drop-shadow-[0_0_10px_rgba(250,204,21,0.7)]">
             <a href="/resume.pdf" download="DavidCui_resume.pdf">
               Resume
             </a>
@@ -56,19 +56,19 @@ export default function Page() {
         
           <div className="space-x-4 z-10">
             <Link href="https://github.com/boncui" target="_blank">
-              <Button variant="outline" size="icon">
+              <Button variant="outline" size="icon" className="hover:text-yellow-400 hover:drop-shadow-[0_0_10px_rgba(250,204,21,0.8)] transition">
                 <Github className="h-4 w-4" />
                 <span className="sr-only">GitHub</span>
               </Button>
             </Link>
             <Link href="https://linkedin.com/in/boncui" target="_blank">
-              <Button variant="outline" size="icon">
+              <Button variant="outline" size="icon" className="hover:text-yellow-400 hover:drop-shadow-[0_0_10px_rgba(250,204,21,0.8)] transition">
                 <Linkedin className="h-4 w-4" />
                 <span className="sr-only">LinkedIn</span>
               </Button>
             </Link>
             <a href="mailto:d.cui@wustl.edu">
-              <Button variant="outline" size="icon">
+              <Button variant="outline" size="icon" className="hover:text-yellow-400 hover:drop-shadow-[0_0_10px_rgba(250,204,21,0.8)] transition">
                 <Mail className="h-4 w-4" />
                 <span className="sr-only">Email</span>
               </Button>
@@ -78,7 +78,7 @@ export default function Page() {
           {/* Scroll Down Indicator */}
           <div className="absolute bottom-10 animate-bounce">
             <Link href="#about">
-              <Button variant="ghost" className="text-gray-400">↓ Scroll Down</Button>
+              <Button variant="ghost" className="transition hover:text-yellow-400 hover:drop-shadow-[0_0_10px_rgba(250,204,21,0.5)]">↓ Scroll Down</Button>
             </Link>
           </div>
         </section>
