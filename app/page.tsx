@@ -63,11 +63,11 @@ export default function Page() {
             </a>
           </div>
 
-          <div className="absolute bottom-10 animate-bounce">
+          {/* <div className="absolute bottom-10 animate-bounce">
             <Link href="#about">
               <Button variant="ghost" className="text-sm sm:text-base transition hover:text-yellow-400 hover:drop-shadow-[0_0_10px_rgba(250,204,21,0.5)]">↓ Scroll Down</Button>
             </Link>
-          </div>
+          </div> */}
         </section>
       </div>
 

@@ -59,7 +59,7 @@ export default function ThreeDModel() {
         }}
         dpr={isMobile ? [1, 1.5] : [1, 2]}
       >
-        <ambientLight intensity={1.2} />
+        <ambientLight intensity={1.8} />
         {!isMobile && <directionalLight position={[10, 10, 5]} intensity={1} />}
         <Suspense fallback={null}>
           <Model simplified={isMobile} />
