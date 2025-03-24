@@ -71,7 +71,7 @@ export default function TechStack() {
     <div className="grid gap-6 md:grid-cols-2">
       {technologies.map((tech) => (
         <Card key={tech.category} className="p-6">
-          <h3 className="text-lg font-semibold mb-4">{tech.category}</h3>
+          <h2 className="text-lg font-bold mb-4">{tech.category}</h2>
           <div className="flex flex-wrap gap-2">
             {tech.skills.map((skill) => (
               <div key={skill} className="flex items-center space-x-2 bg-primary/10 px-3 py-1 rounded-md ring-1 ring-inset ring-primary/20">

@@ -121,39 +121,40 @@ export default function Page() {
         </div>
       </section>
 
-        <section id="projects" className="py-12 md:py-24 lg:py-32 text-center">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12">Projects</h2>
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <ProjectCard
-                title="StudentSwap"
-                description="A full-stack centralized platform for students to trade sublease contracts built with Typescript, React, and MongoDb."
-                type="Fullstack"
-                image="/projects/studentswap.png"
-                siteLink="https://student-swap.vercel.app/"
-                link="https://github.com/boncui/StudentSwap"
-                tags={["Typescript", "React", "MongoDB", "Tailwind CSS", "Express", "Node.js"]}
-              />
-              <ProjectCard
-                title="Melanoma Dectection"
-                description="A real-time task management application with team collaboration features."
-                type="ML"
-                image="/projects/melanoma.png"
-                link="https://github.com/boncui/Melanoma-Classification"
-                tags={["Tensorflow", "Keras", "Python"]}
-              />
-              <ProjectCard
-                title="Dungeons and Dragons game"
-                description="A simple DnD game. Project made on 07/2023"
-                type="Game"
-                image="/projects/dnd.png" 
-                siteLink="https://boncui.pythonanywhere.com"
-                link="https://github.com/boncui/Dungeons_n_dragons_combat"
-                tags={["Python", "Flask"]}
-              />
-            </div>
+      {/* PROJECTS */}
+      <section id="projects" className="py-12 md:py-24 lg:py-32 text-center">
+        <div className="container px-4 md:px-6">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12">Projects</h2>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
+            <ProjectCard
+              title="StudentSwap"
+              description="A full-stack centralized platform for students to trade sublease contracts built with Typescript, React, and MongoDb."
+              type="Fullstack"
+              image="/projects/studentswap.png"
+              siteLink="https://student-swap.vercel.app/"
+              link="https://github.com/boncui/StudentSwap"
+              tags={["Typescript", "React", "MongoDB", "Tailwind CSS", "Express", "Node.js"]}
+            />
+            <ProjectCard
+              title="Melanoma Dectection"
+              description="A real-time task management application with team collaboration features."
+              type="ML"
+              image="/projects/melanoma.png"
+              link="https://github.com/boncui/Melanoma-Classification"
+              tags={["Tensorflow", "Keras", "Python"]}
+            />
+            <ProjectCard
+              title="Dungeons and Dragons game"
+              description="A simple DnD game. Project made on 07/2023"
+              type="Game"
+              image="/projects/dnd.png" 
+              siteLink="https://boncui.pythonanywhere.com"
+              link="https://github.com/boncui/Dungeons_n_dragons_combat"
+              tags={["Python", "Flask"]}
+            />
           </div>
-        </section>
+        </div>
+      </section>
 
         <section className="py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
