@@ -67,12 +67,12 @@ export default function Page() {
                 <span className="sr-only">LinkedIn</span>
               </Button>
             </Link>
-            <Link href="mailto:d.cui@wustl.edu">
+            <a href="mailto:d.cui@wustl.edu">
               <Button variant="outline" size="icon">
                 <Mail className="h-4 w-4" />
                 <span className="sr-only">Email</span>
               </Button>
-            </Link>
+            </a>
           </div>
 
           {/* Scroll Down Indicator */}
