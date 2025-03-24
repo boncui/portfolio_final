@@ -44,7 +44,8 @@ export default function Page() {
       </header>
 
       <div className="bg-background">
-        {!isMobile && <ThreeDModel />}
+        {/* {!isMobile && <ThreeDModel />} */}
+        <ThreeDModel />
 
         <section id="landing" className="w-full min-h-screen flex flex-col justify-center items-center text-center z-10 px-4 sm:px-6 md:px-8">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tighter text-white drop-shadow-2xl">David Cui</h1>
